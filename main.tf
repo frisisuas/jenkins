@@ -27,7 +27,7 @@ resource "azurerm_network_security_rule" "nsg_regla" {
   source_port_range = "*"
   destination_port_range = "3389"
   destination_address_prefix = "*"
-  source_address_prefix = "2.138.59.206"
+  source_address_prefix = "ip"
 }
 resource "azurerm_virtual_network" "vNET" {
   address_space = ["10.0.0.0/16"]
